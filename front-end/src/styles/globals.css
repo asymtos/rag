@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-dark {
+  background-color: #05344f !important;
+}
+
+/* Scroll cutomize */
+
+/* Customize scrollbar track and thumb */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #085784;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #05344f;
+}
+
+.horizontal-text {
+  white-space: nowrap;
+  overflow: hidden;
+  animation: scroll 15s linear infinite; /* Adjust the animation properties as needed */
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(30%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

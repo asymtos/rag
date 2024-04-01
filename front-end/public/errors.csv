@@ -1,0 +1,11 @@
+id,message
+1.,SyntaxError: invalid syntax
+2.,NameError: name '<variable_name>' is not defined
+3.,IndentationError: expected an indented block
+4.,TypeError: can't operate of type '<type1>' with type '<type2>'
+5.,AttributeError: 'int' object has no attribute '<attribute_name>'
+6.,ModuleNotFoundError: No module named '<module_name>'
+7.,ImportError: cannot import name '<module_name>' from partially initialized module '<module_name>'
+8.,IndexError: list index out of range
+9.,KeyError: '<key>' not found in dictionary
+10.,FileNotFoundError: [Errno 2] No such file or directory: '<file_name>'
