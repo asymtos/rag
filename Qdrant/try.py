@@ -1,17 +1,15 @@
 from langchain_community.llms import HuggingFaceEndpoint
 from langchain_community.embeddings.huggingface import HuggingFaceInferenceAPIEmbeddings
 from langchain_community.vectorstores import Qdrant
-from langchain_community.document_loaders import WebBaseLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.chains import RetrievalQA
 from langchain_community.document_loaders import PyPDFLoader
-from qdrant_client import QdrantClient
 import os
-
+#make a directory within the file name: tinyexplorer 
 #huggingface.co -> settings -> access token -> create new 
 #export HUGGINGFACEHUB_API_TOKEN="<Your huggingface access token>"
 
-loader = PyPDFLoader("THE TINY EXPLORER.pdf")
+loader = PyPDFLoader("THE TINY EXPLORER.pdf") #change the name if you are using another file
 documents = loader.load()
 text_splitter = RecursiveCharacterTextSplitter(chunk_size=512,
                                                    chunk_overlap=50)
